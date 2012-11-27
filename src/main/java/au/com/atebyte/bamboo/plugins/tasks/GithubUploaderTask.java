@@ -1,4 +1,4 @@
-package au.com.atebyte.bamboo.plugins;
+package au.com.atebyte.bamboo.plugins.tasks;
 
 import com.atlassian.bamboo.build.logger.BuildLogger;
 import com.atlassian.bamboo.task.TaskContext;

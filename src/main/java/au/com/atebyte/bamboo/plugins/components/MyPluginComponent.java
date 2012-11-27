@@ -1,4 +1,4 @@
-package au.com.atebyte.bamboo.plugins;
+package au.com.atebyte.bamboo.plugins.components;
 
 public interface MyPluginComponent
 {

@@ -3,7 +3,7 @@ package it.au.com.atebyte.bamboo.plugins;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import com.atlassian.plugins.osgi.test.AtlassianPluginsTestRunner;
-import au.com.atebyte.bamboo.plugins.MyPluginComponent;
+import au.com.atebyte.bamboo.plugins.components.MyPluginComponent;
 import com.atlassian.sal.api.ApplicationProperties;
 
 import static org.junit.Assert.assertEquals;

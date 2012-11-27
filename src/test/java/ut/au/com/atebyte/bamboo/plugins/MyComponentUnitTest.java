@@ -1,8 +1,8 @@
 package ut.au.com.atebyte.bamboo.plugins;
 
 import org.junit.Test;
-import au.com.atebyte.bamboo.plugins.MyPluginComponent;
-import au.com.atebyte.bamboo.plugins.MyPluginComponentImpl;
+import au.com.atebyte.bamboo.plugins.components.MyPluginComponent;
+import au.com.atebyte.bamboo.plugins.components.MyPluginComponentImpl;
 
 import static org.junit.Assert.assertEquals;
 

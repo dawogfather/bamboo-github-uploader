@@ -1,7 +1,12 @@
 <atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
 
-    <taskType key="githubUploadTask" name="Github Artifact Uploader" class="au.com.atebyte.bamboo.plugins.GithubUploaderTask">
+    <taskType key="githubUploadTask" name="Github Artifact Uploader" class="au.com.atebyte.bamboo.plugins.tasks.GithubUploaderTask">
+        <category name="deployment"/>
         <description>A task that uploads a chosen artifact to a github repo's downloads section</description>
+        <configuration class="au.com.atebyte.bamboo.plugins.tasks.GithubUploaderTaskConfigurator"/>
+        <resource type="freemarker" name="edit" location="au/com/atebyte/bamboo/plugins/editGithubTask.ftl"/>
+        <resource type="freemarker" name="view" location="au/com/atebyte/bamboo/plugins/viewGithubTask.ftl"/>
+        <resource type="download" name="icon" location="images/pluginLogo.png"/>
     </taskType>
 
     <plugin-info>
@@ -10,6 +15,7 @@
         <vendor name="${project.organization.name}" url="${project.organization.url}" />
         <param name="plugin-icon">images/pluginIcon.png</param>
         <param name="plugin-logo">images/pluginLogo.png</param>
+        <param name="plugin-banner">pluginBanner.png</param>
     </plugin-info>
 
     <!-- add our i18n resource -->
@@ -27,11 +33,13 @@
     </web-resource>
     
     <!-- publish our component -->
-    <component key="myPluginComponent" class="au.com.atebyte.bamboo.plugins.MyPluginComponentImpl" public="true">
-        <interface>au.com.atebyte.bamboo.plugins.MyPluginComponent</interface>
+    <component key="myPluginComponent" class="au.com.atebyte.bamboo.plugins.components.MyPluginComponentImpl" public="true">
+        <interface>au.com.atebyte.bamboo.plugins.components.MyPluginComponent</interface>
     </component>
     
     <!-- import from the product container -->
     <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties" />
+
+    <!--<component-import key="restTemplate" interface="org.springframework.web.client.RestTemplate"/>-->
     
 </atlassian-plugin>
