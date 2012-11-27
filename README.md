@@ -3,7 +3,9 @@ bamboo-github-uploader
 
 An Atlassian bamboo plugin which will automatically upload your selected build artifacts to a github repo downloads section
 
+It is currently under development!
 
+----------
 
 You have successfully created an Atlassian Plugin!
 

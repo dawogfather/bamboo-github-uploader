@@ -1,4 +1,9 @@
 <atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+
+    <taskType key="githubUploadTask" name="Github Artifact Uploader" class="au.com.atebyte.bamboo.plugins.GithubUploaderTask">
+        <description>A task that uploads a chosen artifact to a github repo's downloads section</description>
+    </taskType>
+
     <plugin-info>
         <description>${project.description}</description>
         <version>${project.version}</version>
