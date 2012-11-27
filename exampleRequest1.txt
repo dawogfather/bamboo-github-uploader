@@ -1,0 +1,28 @@
+CURL TO GET THE STUFF
+curl -u dawogfather -H "Content-type: application/json" -X POST -d '{"name":"new_file.jpg","size": 114034,"description": "Latest release","content_type": "text/plain"}'  https://api.github.com/repos/dawogfather/bamboo-github-uploader/downloads
+Enter host password for user 'dawogfather':XXXXXXXXXX
+RESPONSE: 
+
+{
+  "expirationdate": "2112-11-27T07:26:40.000Z",
+  "bucket": "github",
+  "x-amz-meta-content-disposition": "attachment; filename=new_file.jpg",
+  "prefix": "downloads/dawogfather/bamboo-github-uploader",
+  "policy": "ewogICAgJ2V4cGlyYXRpb24nOiAnMjExMi0xMS0yN1QwNzoyNjo0MC4wMDBaJywKICAgICdjb25kaXRpb25zJzogWwogICAgICAgIHsnYnVja2V0JzogJ2dpdGh1Yid9LAogICAgICAgIHsna2V5JzogJ2Rvd25sb2Fkcy9kYXdvZ2ZhdGhlci9iYW1ib28tZ2l0aHViLXVwbG9hZGVyL25ld19maWxlLmpwZyd9LAogICAgICAgIHsnYWNsJzogJ3B1YmxpYy1yZWFkJ30sCiAgICAgICAgeydzdWNjZXNzX2FjdGlvbl9zdGF0dXMnOiAnMjAxJ30sCiAgICAgICAgWydzdGFydHMtd2l0aCcsICckRmlsZW5hbWUnLCAnJ10sCiAgICAgICAgWydzdGFydHMtd2l0aCcsICckQ29udGVudC1UeXBlJywgJyddCiAgICBdCn0=",
+  "download_count": 0,
+  "path": "downloads/dawogfather/bamboo-github-uploader/new_file.jpg",
+  "redirect": false,
+  "mime_type": "text/plain",
+  "description": "Latest release",
+  "created_at": "2012-11-27T07:26:40Z",
+  "url": "https://api.github.com/repos/dawogfather/bamboo-github-uploader/downloads/372533",
+  "signature": "365KUJCM5/HCQmoWhN5UUC3PFaw=",
+  "content_type": "text/plain",
+  "size": 113664,
+  "s3_url": "https://github.s3.amazonaws.com/",
+  "name": "new_file.jpg",
+  "accesskeyid": "AKIAIMQIV4ILYCXTSPOA",
+  "id": 372533,
+  "acl": "public-read",
+  "html_url": "https://github.com/downloads/dawogfather/bamboo-github-uploader/new_file.jpg"
+}
