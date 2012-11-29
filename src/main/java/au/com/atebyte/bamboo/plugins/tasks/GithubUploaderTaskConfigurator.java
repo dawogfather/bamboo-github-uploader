@@ -102,19 +102,19 @@ public class GithubUploaderTaskConfigurator extends AbstractTaskConfigurator
     {
         super.validate(params, errorCollection);
 
-        final String username = params.getString("githubusername");
+        final String username = params.getString(GITHUB_USERNAME);
         if (StringUtils.isEmpty(username)){
-            errorCollection.addError("githubusername", textProvider.getText("au.com.atebyte.bamboo.plugins.github.username.error"));
+            errorCollection.addError(GITHUB_USERNAME, textProvider.getText("au.com.atebyte.bamboo.plugins.github.username.error"));
         }
 
-        final String password = params.getString("githubpassword");
+        final String password = params.getString(GITHUB_PASSWORD);
         if (StringUtils.isEmpty(password)){
-            errorCollection.addError("githubpassword", textProvider.getText("au.com.atebyte.bamboo.plugins.github.password.error"));
+            errorCollection.addError(GITHUB_PASSWORD, textProvider.getText("au.com.atebyte.bamboo.plugins.github.password.error"));
         }
 
-        final String repo = params.getString("githubrepo");
+        final String repo = params.getString(GITHUB_REPO);
         if (StringUtils.isEmpty(repo)){
-            errorCollection.addError("githubrepo", textProvider.getText("au.com.atebyte.bamboo.plugins.github.repo.error"));
+            errorCollection.addError(GITHUB_REPO, textProvider.getText("au.com.atebyte.bamboo.plugins.github.repo.error"));
         }
 
 //        final String artifact = params.getString("artifactname");
@@ -122,9 +122,9 @@ public class GithubUploaderTaskConfigurator extends AbstractTaskConfigurator
 //            errorCollection.addError("artifactname", textProvider.getText("au.com.atebyte.bamboo.plugins.github.artifact.error"));
 //        }
 
-        final String filename = params.getString("filename");
+        final String filename = params.getString(FILE_NAME);
         if (StringUtils.isEmpty(filename)){
-            errorCollection.addError("filename", textProvider.getText("au.com.atebyte.bamboo.plugins.github.filename.error"));
+            errorCollection.addError(FILE_NAME, textProvider.getText("au.com.atebyte.bamboo.plugins.github.filename.error"));
         }
     }
 
